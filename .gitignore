@@ -5,6 +5,8 @@
 /.pnp
 .pnp.js
 
+lint.html
+
 # testing
 /coverage
 
