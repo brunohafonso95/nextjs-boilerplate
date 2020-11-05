@@ -9,7 +9,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "lint-staged": {
@@ -23,6 +24,8 @@
     "react-dom": "17.0.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^8.3.3",
+    "@commitlint/config-conventional": "^8.3.3",
     "@types/node": "^14.14.6",
     "@types/react": "^16.9.55",
     "@typescript-eslint/eslint-plugin": "^4.6.1",
