@@ -1,20 +1,76 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Getting Started with nextJS
 
-## Getting Started
-
-First, run the development server:
+To Create a new project run the following command:
 
 ```bash
-npm run dev
+npx create-next-app
 # or
-yarn dev
+yarn create next-app
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+this command will prompt for some informations about the project like, name and the template, so when you answer the questions, the project dependencies will be installed and you will receive this message:
+
+```bash
+Success! Created next-boilerplate at path_to_your_project 
+Inside that directory, you can run several commands:
+
+  yarn dev
+    Starts the development server.
+
+  yarn build
+    Builds the app for production.
+
+  yarn start
+    Runs the built app in production mode.
+
+We suggest that you begin by typing:
+```
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-## Learn More
+## Using typescript on project
+
+1. create a `tsconfig.json` file (can be an empty file)
+
+2. run the following command:
+
+```bash
+npm run dev
+# or with yarn
+yarn dev
+```
+this command will output the this message:
+
+```bash
+ready - started server on http://localhost:3000   
+It looks like you're trying to use TypeScript but 
+do not have the required package(s) installed.    
+
+Please install typescript, @types/react, and @types/node by running:
+        
+        npm install --save-dev typescript @types/react @types/node 
+        yarn add --dev typescript @types/react @types/node
+
+If you are not trying to use TypeScript, please remove the tsconfig.json file from your package root (and any TypeScript files in your pages directory).
+```
+
+so we need to install the dependencies of typescript that we need in the project
+
+```bash
+npm install --save-dev typescript @types/react @types/node 
+# or with yarn
+yarn add --dev typescript @types/react @types/node
+```
+
+3. run the command above to make the next populate `tsconfig.json` with the default typescript options.
+
+```bash
+npm run dev
+# or with yarn
+yarn dev
+```
+
+## Links about NextJS
 
 To learn more about Next.js, take a look at the following resources:
 
