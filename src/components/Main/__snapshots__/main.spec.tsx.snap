@@ -1,9 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Main Component Unit Tests should render the heading 1`] = `
-<main>
-  <h1>
-    React Avançado
+<main
+  class="styles__Wrapper-sc-1fpvr54-0 kxOpwg"
+>
+  <img
+    alt="Imagem de um átomo e React Avançado escrito ao lado."
+    class="styles__Logo-sc-1fpvr54-1 bzvOTj"
+    src="/assets/logo.svg"
+  />
+  <h1
+    class="styles__Description-sc-1fpvr54-2 kakNkD"
+  >
+    Typescript, NextJS e Styled Components
   </h1>
+  <img
+    alt="Desenvolvedor de frente para o código numa mesa."
+    class="styles__Illustration-sc-1fpvr54-3 fVSaMV"
+    src="/assets/hero-illustration.svg"
+  />
 </main>
 `;
