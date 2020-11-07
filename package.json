@@ -10,7 +10,7 @@
     "test:watch": "jest --watch",
     "lint:fix": "eslint src/** --ext .ts --fix -f html -o lint.html",
     "storybook": "start-storybook -s ./public -p 6006 --no-dll",
-    "build-storybook": "build-storybook --no-dll"
+    "build-storybook": "build-storybook --no-dll -s ./public"
   },
   "husky": {
     "hooks": {
