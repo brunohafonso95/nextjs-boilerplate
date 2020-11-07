@@ -1,22 +1,61 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Main Component Unit Tests should render the heading 1`] = `
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #06092b;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 3rem;
+  text-align: center;
+  width: 100%;
+}
+
+.c1 {
+  margin-bottom: 2rem;
+  width: 25rem;
+}
+
+.c2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.c3 {
+  margin-top: 3rem;
+  width: min(35rem,100%);
+}
+
 <main
-  class="styles__Wrapper-sc-1fpvr54-0 kxOpwg"
+  class="c0"
 >
   <img
     alt="Imagem de um átomo e React Avançado escrito ao lado."
-    class="styles__Logo-sc-1fpvr54-1 bzvOTj"
+    class="c1"
     src="/assets/logo.svg"
   />
   <h1
-    class="styles__Description-sc-1fpvr54-2 kakNkD"
+    class="c2"
   >
     Typescript, NextJS e Styled Components
   </h1>
   <img
     alt="Desenvolvedor de frente para o código numa mesa."
-    class="styles__Illustration-sc-1fpvr54-3 fVSaMV"
+    class="c3"
     src="/assets/hero-illustration.svg"
   />
 </main>
