@@ -43,7 +43,8 @@
     "react",
     "@typescript-eslint",
     "react-hooks",
-    "prettier"
+    "prettier",
+    "import-helpers"
   ],
   "rules": {
     "react/jsx-props-no-spreading": "off",
@@ -79,6 +80,17 @@
           ".ts",
           ".tsx"
         ]
+      }
+    ],
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": [
+          "module",
+          ["parent", "sibling", "index"]
+        ],
+        "alphabetize": { "order": "asc", "ignoreCase": true }
       }
     ]
   }
