@@ -1,8 +1,10 @@
+import * as S from './styles'
+
 const Main = () => {
   return (
-    <div>
-      <h1>Main Component</h1>
-    </div>
+    <S.Wrapper>
+      <h1>NextJS Boilerplate</h1>
+    </S.Wrapper>
   );
 }
 export default Main
