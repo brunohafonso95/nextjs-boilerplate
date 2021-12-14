@@ -5,5 +5,22 @@
     "node": true,
     "browser": true,
     "es2020": true
+  },
+  "plugins": [
+    "prettier",
+    "import-helpers"
+  ],
+  "rules": {
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": [
+          "module",
+          ["parent", "sibling", "index"]
+        ],
+        "alphabetize": { "order": "asc", "ignoreCase": true }
+      }
+    ]
   }
 }
