@@ -6,7 +6,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
+    "prepare": "husky install && npx --no-install typesync",
+    "test": "jest"
   },
   "dependencies": {
     "next": "12.0.7",
@@ -14,16 +15,22 @@
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@babel/preset-typescript": "^7.16.5",
     "@commitlint/cli": "^8.3.3",
     "@commitlint/config-conventional": "^8.3.3",
-    "@types/react": "^17.0.37",
+    "@types/eslint": "8.2.1",
+    "@types/prettier": "^2.4.2",
+    "@types/react": "17.0.2",
+    "@types/react-dom": "17.0.2",
     "commitlint": "^15.0.0",
     "eslint": "8.4.1",
     "eslint-config-next": "12.0.7",
     "eslint-config-prettier": "^8.3.0",
     "husky": "^7.0.4",
+    "jest": "^27.4.5",
     "lint-staged": "^12.1.2",
     "prettier": "^2.5.1",
-    "typescript": "^4.5.4"
+    "typescript": "^4.5.4",
+    "typesync": "^0.8.0"
   }
 }
