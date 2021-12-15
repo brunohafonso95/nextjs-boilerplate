@@ -11,12 +11,12 @@ exports[`Unit tests for Main Component should render a header element 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
+  height: 100%;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
 }
 
 <div

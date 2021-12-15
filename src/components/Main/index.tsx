@@ -1,10 +1,11 @@
-import * as S from './styles'
+import { MainProps } from './interfaces';
+import * as S from './styles';
 
-const Main = () => {
+const Main = ({ title = 'NextJS Boilerplate' }: MainProps) => {
   return (
     <S.Wrapper>
-      <h1>NextJS Boilerplate</h1>
+      <h1>{title}</h1>
     </S.Wrapper>
   );
-}
-export default Main
+};
+export default Main;
