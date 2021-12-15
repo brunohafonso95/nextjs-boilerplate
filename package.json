@@ -8,8 +8,9 @@
     "lint": "next lint",
     "prepare": "husky install && npx --no-install typesync",
     "test": "jest --maxWorkers=50%",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook": "start-storybook -s ./public -p 6006",
+    "build-storybook": "build-storybook -s ./public",
+    "generate": "yarn plop --plopfile ./generators/plopfile.js"
   },
   "dependencies": {
     "next": "12.0.7",
@@ -56,6 +57,7 @@
     "jest": "^27.4.5",
     "jest-styled-components": "^7.0.8",
     "lint-staged": "^12.1.2",
+    "plop": "^3.0.5",
     "prettier": "^2.5.1",
     "typescript": "^4.5.4",
     "typesync": "^0.8.0"
